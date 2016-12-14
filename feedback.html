@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Nirav Pardiwala</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<header>
+<div id="logo"><img src="content/logo.png" alt="My Logo" /></div>
+</header>
+    <nav id="myMenu">
+        <ul>
+            <li><a onclick="menuFunction()"><img src="content/menu.png" alt="Menu Icon" /></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="hobbies.html">My Hobbies</a></li>
+            <li><a href="dream.html">My Dreams</a></li>
+            <li><a href="selfie.html">Selfie Time</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+			<li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="content" class="my_feedback">
+	<h1>Write Me about your Experience</h1>
+	<form class="feedback_form" action="thankyou.html" name="form" method="post" >
+		<label>Name</label>
+		<input type="text" name="name" class="textbox" required /><br/>
+		<label>Email</label>
+		<input type="email" name="email" class="textbox" required /><br/>
+		<label>Judge my website</label><br/>
+		<input type="radio" name="radio" checked/>Excellent
+		<input type="radio" name="radio" />Good
+		<input type="radio" name="radio" />Average
+		<input type="radio" name="radio" />Poor<br/>
+		<label>Which Pages did you like the most?</label><br/>
+		<input type="checkbox" name="checkbox" checked/>All
+		<input type="checkbox" name="checkbox"/>Home
+		<input type="checkbox" name="checkbox"/>About Me<br/>
+		<input type="checkbox" name="checkbox" />My Hobbies
+		<input type="checkbox" name="checkbox"/>My Dream
+		<input type="checkbox" name="checkbox"/>Selfie Time<br/>		
+		<label>Comment</label>
+		<textarea></textarea><br/>
+		<input class="button" type="submit" value="SEND" onclick="validate_form()" />
+		<input class="button" type="reset" value="RESET"/> <br/>
+	</form>
+</section>
+<footer>
+		<p>For more Information mail me: <a href="mailto:niravpardiwala38@gmail.com">niravpardiwala38@gmail.com</a></p>
+		<p>Copyrightby@niravpardiwala2015</p>
+</footer>
+</body>
+</html>
