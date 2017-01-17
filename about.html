@@ -5,37 +5,40 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
 <header>
-<div id="logo"><img src="content/logo.png" alt="My Logo" /></div>
+<div id="logo"><img src="content/logo.png" alt="My Logo" /><span>BETA</span></div>
 </header>
     <nav id="myMenu">
         <ul>
             <li><a onclick="menuFunction()"><img src="content/menu.png" alt="Menu Icon" /></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="hobbies.html">My Hobbies</a></li>
-            <li><a href="dream.html">My Dreams</a></li>
+            <li><a href="dream.html">Bucketlist</a></li>
             <li><a href="selfie.html">Selfie Time</a></li>
             <li><a href="feedback.html">Feedback</a></li>
-			<li><a href="resume.html">Resume</a></li>
+			<li><a href="resume.html">Portfolio</a></li>
         </ul>
     </nav>
 <section id="content" class="about-us">
-	<h1>Something more about ME</h1>
+	<h1>About ME</h1>
 	<article class="content_1">
 	<ul class="bio">
-		<li><p><b>Full Name:</b> Nirav Nilesh Pardiwala.</p></li>
-		<li><p><b>Birthday Day:</b> 1st October 1992.</p></li>
-		<li><p><b>Sunsign:</b> Libra</p></li>
-		<li><p><b>Country:</b> India</p></li>
-		<li><p><b>City:</b> Mumbai</p></li>
-		<li><p><b>My Moto:</b> Ever Positive, Never Negative.</p></li>
+		<li id="descp_1" ><p ><b>Full Name:</b> Nirav Nilesh Pardiwala.</p></li>
+		<li id="descp_2" ><p ><b>Birthday Day:</b> 1st October 1992.</p></li>
+		<li id="descp_3" ><p ><b>Sunsign:</b> Libra</p></li>
+		<li id="descp_4" ><p ><b>Country:</b> India</p></li>
+		<li id="descp_5" ><p ><b>City:</b> Mumbai</p></li>
+		<li id="descp_6" ><p ><b>My Moto:</b> Ever Positive, Never Negative.</p></li>
 	</ul>
-	<img src="content/about/about_1.jpg" alt="About Me"/>	
+	<div class="content_1_image">
+		<img src="content/about/about_1.jpg" id="aboutMeImg" alt="About Me"/>	
+	</div>
+	
 	</article>
 	<article class="content_2">
 		<p>My upbringing in Mumbai in a middle-class family, where my parents have struggled to provide and give everything to their children has taught me that life is not easy but worrying about your future won't help the present. The values inculcated in me by my parents have contributed in building my character and helped me to be different from others. I was encouraged to participate in different extra-curricular activities like dancing, singing, elocutions, poem writing, attending social service camp etc. and I have won prices in almost every competition during my school.</p>
@@ -43,37 +46,35 @@
 	</article>
 	<article class="content_3">
 	<ul class="about_positive">
-	<li><p>Positive about me</p></li>
-	<li><p>I love dancing</p></li>
-	<li><p>I am an Honest Person</p></li>
-	<li><p>I love Trying new and chellanging things.</p></li>
-	<li><p>Always Love to smile.</p></li>
-	<li><p>I respect all my relations.</p></li>	
+	<li id="pos_1" ><p>Positive about me</p></li>
+	<li id="pos_2"><p>I love dancing</p></li>
+	<li id="pos_3"><p>I am an Honest Person</p></li>
+	<li id="pos_4"><p>I love Trying new and chellanging things.</p></li>
+	<li id="pos_5"><p>Always carry my smile.</p></li>
+	<li id="pos_6"><p>I respect all my relations.</p></li>	
 	</ul>
 	<ul  class="about_negative">
-	<li><p>Negative about me</p></li>
-	<li><p>I am a slow learner.</p></li>
-	<li><p>I am an emotional person</p></li>
-	<li><p>I love to sleep and eat alot.</p></li>
-	<li><p>I misplace my things very often.</p></li>
-	<li><p>I tend to fall in troubles.</p></li>
+	<li id="neg_1"><p>Negative about me</p></li>
+	<li id="neg_2"><p>I cant say NO for any help.</p></li>
+	<li id="neg_3"><p>I am an emotional person.</p></li>
+	<li id="neg_4"><p>I love to sleep and eat alot.</p></li>
+	<li id="neg_5"><p>I misplace my things very often.</p></li>
 	</ul>
 	</article>
 	<article class="content_4">
-		<h3>Know Me better, Here is my active social media sites:</h3>
+		<h3>Know Me better, Here is my active profiles:</h3>
 		<ul>
-		<li><a target="new" href="https://www.facebook.com/nirav.kanizaro"><img src="content/about/facebook.jpg" alt="facebook"/></a></li>
-		<li><a target="new" href="https://www.instagram.com/nirav_kanizaro/"><img src="content/about/instagram.jpg" alt="instagram"/></a></li>
-		<li><a target="new" href="https://www.snapchat.com/nirav_kanizaro"><img src="content/about/snapchat.jpg" alt="snapchat"/></a></li>
-		<li><a target="new" href="https://www.youtube.com/channel/UCdP2QLph4VDEgck5tyC2ReQ"><img src="content/about/youtube.jpg" alt="Youtube"/></a></li>
-		<li><a target="new" href="https://secure.skype.com/portal/overview?intsrc=client-_-webapp-_-production-_-go-myaccount"><img src="content/about/skype.jpg" alt="Skype"/></a></li>
-		<li><a target="new" href="https://plus.google.com/u/0/+NiravPardiwala/"><img src="content/about/googleplus.jpg" alt="Google Plus"/></a></li>
+		<li id="acc_1"><a target="new" href="https://www.facebook.com/nirav.kanizaro"><img src="content/about/facebook.jpg" alt="facebook"/></a></li>
+		<li id="acc_2"><a target="new" href="https://www.instagram.com/nirav_kanizaro/"><img src="content/about/instagram.jpg" alt="instagram"/></a></li>
+		<li id="acc_3"><a target="new" href="https://www.linkedin.com/in/niravpardiwala"><img src="content/about/linkedin.jpg" alt="linked In"/></a></li>
+		<li id="acc_4"><a target="new" href="https://www.youtube.com/channel/UCdP2QLph4VDEgck5tyC2ReQ"><img src="content/about/youtube.jpg" alt="Youtube"/></a></li>
+		<li id="acc_5"><a target="new" href="https://secure.skype.com/portal/overview?intsrc=client-_-webapp-_-production-_-go-myaccount"><img src="content/about/skype.jpg" alt="Skype"/></a></li>
+		<li id="acc_6"><a target="new" href="https://plus.google.com/u/0/+NiravPardiwala/"><img src="content/about/googleplus.jpg" alt="Google Plus"/></a></li>
 		</ul>
 	</article>
 </section>
 <footer>
-		<p>For more Information mail me: <a href="mailto:niravpardiwala38@gmail.com">niravpardiwala38@gmail.com</a></p>
-		<p>Copyrightby@niravpardiwala2015</p>
+		<p>For more Information mail me: <a href="mailto:niravpardiwala0110@gmail.com">niravpardiwala0110@gmail.com</a></p>
 </footer>
 </body>
 
